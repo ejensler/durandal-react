@@ -1,0 +1,19 @@
+# project-level dependencies
+node_modules
+
+# IDEs
+*.sublime-project
+*.sublime-workspace
+
+# build locations
+build/
+dist/
+
+# OSX
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Thumbnails
+._*
+*.db

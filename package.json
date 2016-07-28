@@ -1,0 +1,32 @@
+{
+  "name": "durandal-react",
+  "version": "0.0.1",
+  "description": "Use React.js within Durandal.js",
+  "main": "main.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejensler/durandal-react.git"
+  },
+  "keywords": [
+    "Durandal",
+    "React"
+  ],
+  "author": "Ethan Ensler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ejensler/durandal-react/issues"
+  },
+  "homepage": "https://github.com/ejensler/durandal-react#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4"
+  }
+}
