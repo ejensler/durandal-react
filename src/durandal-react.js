@@ -5,7 +5,7 @@ define(['durandal/viewEngine',
 	'react',
 	'reactDOM'],
 function(viewEngine, router, $, ko, React, ReactDOM) {
-	var reactDurandal = {};
+	var durandalReact = {};
 
 	// Do some checks to ensure we have jQuery, knockout, React, and ReactDOM;
 	if (!$) {
@@ -110,7 +110,7 @@ function(viewEngine, router, $, ko, React, ReactDOM) {
 	}
 
 	// Simple API: just initialize the library and start using React components! Woo!
-	reactDurandal.initialize = function() {
+	durandalReact.initialize = function() {
 		addKoHooks();
 		// Hook into Durandal router by wrapping the buildNavigationModel function. That way, when
 		// the routes are built, we automatically add the necessary hooks to get the React
@@ -126,5 +126,5 @@ function(viewEngine, router, $, ko, React, ReactDOM) {
 		};
 	};
 
-	return reactDurandal;
+	return durandalReact;
 });

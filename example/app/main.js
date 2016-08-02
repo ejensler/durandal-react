@@ -9,7 +9,7 @@
         'jquery': '../lib/jquery/jquery-1.9.1',
         'react': '../lib/react',
         'reactDOM': '../lib/react-dom',
-        'reactDurandal': '../../src/react-durandal'
+        'durandalReact': '../../src/durandal-react'
     },
     shim: {
         'bootstrap': {
@@ -19,7 +19,7 @@
     }
 });
 
-define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'reactDurandal'],  function (system, app, viewLocator, reactDurandal) {
+define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'durandalReact'],  function (system, app, viewLocator, durandalReact) {
     //>>excludeStart("build", true);
     system.debug(true);
     //>>excludeEnd("build");
@@ -36,7 +36,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'reactDuranda
         //Look for partial views in a 'views' folder in the root.
         viewLocator.useConvention();
 
-        reactDurandal.initialize();
+        durandalReact.initialize();
 
         //Show the app by setting the root view model for our application with a transition.
         app.setRoot('viewmodels/shell', 'entrance');
